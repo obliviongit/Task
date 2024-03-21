@@ -1,0 +1,10 @@
+CREATE DATABASE code_snippet_db;
+USE code_snippet_db;
+CREATE TABLE code_snippets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255),
+    code_language VARCHAR(50),
+    stdin TEXT,
+    source_code TEXT,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
